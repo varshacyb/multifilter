@@ -3,6 +3,10 @@
     "description": "A cybage extension for multiple layered navigation.",
     "type": "magento2-module",
     "version": "2.0.2",
+     "license": [
+        "OSL-3.0",
+        "AFL-3.0"
+    ],
     "repositories": [
     {
         "type": "composer",
@@ -10,7 +14,7 @@
     }
     ],
     "require": {
-        "cybage/module-multifilter": "2.0.2"
+        "cybage/module-multifilter": "dev-master"
     },
     "require-dev": {
         "magento/module-media-storage": "100.0.0",
