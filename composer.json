@@ -3,19 +3,43 @@
     "description": "A cybage extension for multiple layered navigation.",
     "type": "magento2-module",
     "version": "2.0.2",
-    "license": [
-        "OSL-3.0",
-        "AFL-3.0"
-    ],
     "repositories": [
-        {
-            "type": "composer",
-            "url": "https://packagist.org/packages/cybage/module-multifilter"
-        }
-    ],
-    "minimum-stability": "alpha",
-    "prefer-stable": true,
-    "extra": {
-        "magento-force": "override"
+    {
+        "type": "composer",
+        "url": "https://packagist.org/packages/cybage/module-multifilter"
     }
+    ],
+    "require": {
+        "cybage/module-multifilter": "2.0.2",
+    },
+    "require-dev": {
+        "magento/module-media-storage": "100.0.0",
+        "magento/module-swatches": "100.0.0",
+        "magento/module-config": "100.0.*",
+        "magento/module-catalog": "100.0.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Magento\\Framework\\": "lib/internal/Magento/Framework/",
+            "Magento\\Setup\\": "setup/src/Magento/Setup/",
+            "Magento\\": "app/code/Magento/"
+        },
+        "psr-0": {
+            "": "app/code/"
+        },
+        "files": [
+        "app/etc/NonComposerComponentRegistration.php"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Magento\\Sniffs\\": "dev/tests/static/framework/Magento/Sniffs/",
+            "Magento\\Tools\\": "dev/tools/Magento/Tools/",
+            "Magento\\Tools\\Sanity\\": "dev/build/publication/sanity/Magento/Tools/Sanity/",
+            "Magento\\TestFramework\\Inspection\\": "dev/tests/static/framework/Magento/TestFramework/Inspection/",
+            "Magento\\TestFramework\\Utility\\": "dev/tests/static/framework/Magento/TestFramework/Utility/"
+        }
+    },
+    "minimum-stability": "alpha",
+    "prefer-stable": true
 }
