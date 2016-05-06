@@ -10,7 +10,7 @@
     }
     ],
     "require": {
-        "cybage/module-multifilter": "2.0.2",
+        "cybage/module-multifilter": "2.0.2"
     },
     "require-dev": {
         "magento/module-media-storage": "100.0.0",
