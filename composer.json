@@ -30,7 +30,10 @@
         },
         "psr-0": {
             "": "app/code/"
-        }
+        },
+        "files": [
+        "app/etc/NonComposerComponentRegistration.php"
+        ]
     },
     "autoload-dev": {
         "psr-4": {
@@ -41,6 +44,6 @@
             "Magento\\TestFramework\\Utility\\": "dev/tests/static/framework/Magento/TestFramework/Utility/"
         }
     },
-    "minimum-stability": "alpha",
+    "minimum-stability": "dev",
     "prefer-stable": false
 }
