@@ -30,10 +30,7 @@
         },
         "psr-0": {
             "": "app/code/"
-        },
-        "files": [
-        "app/etc/NonComposerComponentRegistration.php"
-        ]
+        }
     },
     "autoload-dev": {
         "psr-4": {
