@@ -18,7 +18,7 @@
         "cybage/module-multifilter": "dev-master",
         "magento/module-store": "100.0.*",
         "magento/module-media-storage": "100.0.*",
-        "magento/module-swatches": "100.0.0",
+        "magento/module-swatches": "100.0.*",
         "magento/module-config": "100.0.*",
         "magento/module-catalog": "100.0.*"
     },
