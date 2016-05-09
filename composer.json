@@ -13,32 +13,19 @@
         "url": "https://packagist.org/packages/cybage/module-multifilter"
     }
     ],
-    "require": {
-        "cybage/module-multifilter": "dev-master"
-    },
-    "require-dev": {
+     "require": {
+        "php": "~5.5.0|~5.6.0",
+        "cybage/module-multifilter": "dev-master",
+        "magento/module-store": "100.0.0",
         "magento/module-media-storage": "100.0.0",
         "magento/module-swatches": "100.0.0",
         "magento/module-config": "100.0.*",
         "magento/module-catalog": "100.0.*"
     },
     "autoload": {
+        "files": [ "registration.php" ],
         "psr-4": {
-            "Magento\\Framework\\": "lib/internal/Magento/Framework/",
-            "Magento\\Setup\\": "setup/src/Magento/Setup/",
-            "Magento\\": "app/code/Magento/"
-        },
-        "psr-0": {
-            "": "app/code/"
-        }
-    },
-    "autoload-dev": {
-        "psr-4": {
-            "Magento\\Sniffs\\": "dev/tests/static/framework/Magento/Sniffs/",
-            "Magento\\Tools\\": "dev/tools/Magento/Tools/",
-            "Magento\\Tools\\Sanity\\": "dev/build/publication/sanity/Magento/Tools/Sanity/",
-            "Magento\\TestFramework\\Inspection\\": "dev/tests/static/framework/Magento/TestFramework/Inspection/",
-            "Magento\\TestFramework\\Utility\\": "dev/tests/static/framework/Magento/TestFramework/Utility/"
+            "Cybage\\Multifilter\\": ""
         }
     },
     "minimum-stability": "dev",
